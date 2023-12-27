@@ -54,6 +54,17 @@ a {
 button.ghost {
 	background-color: transparent;
 	border-color: #FFFFFF;
+	border-radius: 20px;
+	border: 1px solid #FF4B2B;
+	background-color: #FF4B2B;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+	
 }
 
 form {
@@ -85,7 +96,7 @@ input {
 	width: 768px;
 	max-width: 100%;
 	min-height: 480px;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 .form-container {
@@ -147,9 +158,7 @@ input {
 }
 
 .overlay {
-	background: #FF416C;
-	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
-	background: linear-gradient(to right, #FF4B2B, #FF416C);
+	background: linear-gradient(to right, #544d4c, #aca9a9);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;

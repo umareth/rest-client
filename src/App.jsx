@@ -5,6 +5,7 @@ import RestCard from "./companents/RestCard/RestCard";
 import Category from "./companents/Category/Category";
 import Auth from "./companents/Auth/Auth";
 import Menu from "./companents/Menu/Menu";
+import Cart from "./companents/Cart/Cart";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path={"/"} element={<RestCard />} />
         <Route path={"/category"} element={<Category />} />
         <Route path={"/menu"} element={<Menu />} />
+        <Route path={"/menu"} element={<Cart />} />
       </Routes>
     </>
   );

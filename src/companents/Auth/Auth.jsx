@@ -32,11 +32,7 @@ const Auth = () => {
 	</div>
 	<div class="overlay-container">
 		<div class="overlay">
-			<div class="overlay-panel overlay-left">
-				<h1 className='title'>Welcome Back!</h1>
-				<p className='auth_p'>To keep connected with us please login with your personal info</p>
-				<button class="ghost" id="signIn">Sign In</button>
-			</div>
+			
 			<div class="overlay-panel overlay-right">
 				<h1 className='title'>Hello, Friend!</h1>
 				<p className='auth_p'>Enter your personal details and start journey with us</p>
