@@ -14,7 +14,9 @@ const Header = () => {
     <div className="header">
       <div onClick={() => navigate("/")} className="header_logo">Logo</div>
       <div className="header_search">
-        <input className="header_input" type="text" />
+        <input 
+        placeholder="Search🔍"
+        className="header_input" type="text" />
       </div>
       <div className="header_nav">
         <ul className="header_ul">

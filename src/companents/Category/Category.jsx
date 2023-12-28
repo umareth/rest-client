@@ -1,30 +1,82 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Category.css";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchOneRest } from "../../features/restSlice";
 
-const Menu = () => {
+const Category = () => {
+  const dispatch = useDispatch();
+  // const restOne = useSelector((state) => state.restsReducer.oneRest)
+  const { id } = useParams();
+  // console.log(restOne);
+  useEffect(() => {
+    dispatch(fetchOneRest(id));
+  }, []);
   return (
-    <Link to={"/menu"}>
-      <div class="outer">
-        <div class="inner"></div>
-        <div class="item">
-          <div class="item-name">
-            <h4>Pizza</h4>
-            <p>Fresh & sweet</p>
-          </div>
-          <div class="item-price">
-            <p>&#36; 5</p>
-            <div class="rating">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+    <div className="itemsCategoory">
+      {}
+      <Link to={"/menu"}>
+        <div class="outer">
+          <div class="inner"></div>
+          <div class="item">
+            <div class="item-name">
+              <h4>Pizza</h4>
+              <p>Fresh & sweet</p>
+            </div>
+            <div class="item-price">
+              <p>&#36; 5</p>
+              <div class="rating">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </Link>
+      </Link>
+      <Link to={"/menu"}>
+        <div class="outer">
+          <div class="inner"></div>
+          <div class="item">
+            <div class="item-name">
+              <h4>Pizza</h4>
+              <p>Fresh & sweet</p>
+            </div>
+            <div class="item-price">
+              <p>&#36; 5</p>
+              <div class="rating">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Link>
+      <Link to={"/menu"}>
+        <div class="outer">
+          <div class="inner"></div>
+          <div class="item">
+            <div class="item-name">
+              <h4>Pizza</h4>
+              <p>Fresh & sweet</p>
+            </div>
+            <div class="item-price">
+              <p>от &#36; 5</p>
+              <div class="rating">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Link>
+    </div>
   );
 };
 
-export default Menu;
+export default Category;

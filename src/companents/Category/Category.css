@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+.itemsCategoory{
+  width: 1000px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
 .outer {
+  
   margin-top: 40px;
   width: 295px;
   height: 228px;
